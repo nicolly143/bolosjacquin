@@ -181,7 +181,7 @@ h1 {
     position: absolute;
     bottom: -10px;
     margin-bottom: 10px;
-    
+
 
 
 }
@@ -194,7 +194,7 @@ h1 {
     margin-top: 5px;
     border: none;
     height: 2px;
-    
+
 }
 
 
@@ -274,3 +274,39 @@ h1 {
     font-size: 24px;
 
 }
+
+/* --------footer--------- */
+
+footer{
+  background-color: #fff4f4;
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+.footer_container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+
+.nav_footer{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    
+}
+
+
+.footer_container span, 
+.nav_footer a{
+     font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+.nav_footer a{ 
+    text-decoration: none;
+    color: #747878;
+}
+
