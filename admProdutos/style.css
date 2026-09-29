@@ -172,6 +172,125 @@ header {
 
 }
 
+/* -----------Formulario ----------- */
+form{
+    /* background-color: #05a7f2; */
+    width: 100%;
+}
+
+.input_form {
+    display: flex;
+    width: 100%;
+    max-width: 1200;
+    justify-content: space-around;
+}
+
+.lf_coluna {
+    display: flex;
+    flex-direction: column;
+}
+.lf_linha{
+    display: flex;
+}
+
+.input_img svg {
+    width: 24px;
+}
+
+.form_coluna1,
+.form_coluna2 {
+    width: 414px;
+}
+
+.input_img span,
+form label {
+    font-family: var(--fonthankens);
+    text-transform: uppercase;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input_form input[type=text],
+.input_form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #444444;
+    resize: none;
+    
+}
+
+.input_form input[type=text],
+.input_form textarea:focus{
+    outline: none;
+
+}
+
+.linha_form {
+    margin-bottom: 20px;
+}
+
+.input_form input[type=file] {
+    display: none;
+}
+
+
+.input_img label{
+    /* background-color: rgb(0, 85, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    border: solid 1px #444444;
+}
+
+.input_img label:hover {
+    cursor: pointer;
+}
+
+form input[type=checkbox],
+form input[type= text]{
+    height: 25px;
+
+}
+
+.input_cat input{
+    width: 314px;
+    margin-right: 20px;
+}
+
+.input_valor input{
+    margin-right: 20px;
+    width: 360px;
+}
+
+form input[type=button]{
+    margin: 100px auto 0;
+    display: block;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    color: #ffffff  ;
+    background-color: #000000;
+    padding: 16px 40px;
+    letter-spacing: 3px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -203,7 +322,7 @@ header {
     }
 
 
-    .box_h2 hr{
+    .box_h2 hr {
         margin-top: 10px;
         width: 70%;
     }
