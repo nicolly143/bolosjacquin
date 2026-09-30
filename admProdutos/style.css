@@ -18,6 +18,7 @@ h1 {
     --corPrincipal: #fff4f4;
     --fonthankens: "Hanken Grotesk", sans-serif;
     --corDourado: #c5a028;
+    --corsecundaria: #fdfdf8
 }
 
 .container {
@@ -173,13 +174,14 @@ header {
 }
 
 /* -----------Formulario ----------- */
-form{
+form {
     /* background-color: #05a7f2; */
     width: 100%;
 }
 
 .input_form {
     display: flex;
+
     width: 100%;
     max-width: 1200;
     justify-content: space-around;
@@ -189,7 +191,8 @@ form{
     display: flex;
     flex-direction: column;
 }
-.lf_linha{
+
+.lf_linha {
     display: flex;
 }
 
@@ -199,7 +202,8 @@ form{
 
 .form_coluna1,
 .form_coluna2 {
-    width: 414px;
+    max-width: 414px;
+    width: 45%;
 }
 
 .input_img span,
@@ -208,7 +212,7 @@ form label {
     text-transform: uppercase;
     color: #444444;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .input_form input[type=text],
@@ -217,11 +221,11 @@ form label {
     border: none;
     border-bottom: solid 1px #444444;
     resize: none;
-    
+
 }
 
 .input_form input[type=text],
-.input_form textarea:focus{
+.input_form textarea:focus {
     outline: none;
 
 }
@@ -235,7 +239,7 @@ form label {
 }
 
 
-.input_img label{
+.input_img label {
     /* background-color: rgb(0, 85, 255); */
     display: flex;
     align-items: center;
@@ -249,36 +253,136 @@ form label {
 }
 
 form input[type=checkbox],
-form input[type= text]{
+form input[type=text] {
     height: 25px;
 
 }
 
-.input_cat input{
-    width: 314px;
+.input_cat {
+    width: 79%;
+}
+
+.input_cat input {
+    max-width: 314px;
     margin-right: 20px;
 }
 
-.input_valor input{
+.input_valor {
+    width: 97%;
+}
+
+.input_valor input {
     margin-right: 20px;
     width: 360px;
 }
 
-form input[type=button]{
+form input[type=button] {
     margin: 100px auto 0;
     display: block;
     font-family: "Hanken Grotesk", sans-serif;
+    background-color: #000000;
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
     border: none;
-    color: #ffffff  ;
-    background-color: #000000;
-    padding: 16px 40px;
+    color: #ffffff;
+    padding: 16px 55px;
     letter-spacing: 3px;
-    
+    /* espaçamento entre as letras */
+    cursor: pointer;
+
 }
+
+/* ------------Formulario-------------- */
+
+.list_produtos {
+    background-color: var(--corsecundaria);
+}
+
+table {
+    background-color: aqua;
+    width: 100%;
+    font-family: var(--fonthankens);
+    text-transform: uppercase;
+}
+
+thead {
+    font-size: 12px;
+    font-weight: 600;
+    color: #44444444;
+}
+
+tbody {
+    color: #aaaaaa;
+}
+
+table svg {
+    width: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -325,5 +429,23 @@ form input[type=button]{
     .box_h2 hr {
         margin-top: 10px;
         width: 70%;
+    }
+
+
+
+
+    /* ---------formulario-------------- */
+
+    .input_form {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .form_coluna1,
+    .form_coluna2 {
+        max-width: 500;
+        width: 80%;
+
     }
 }
